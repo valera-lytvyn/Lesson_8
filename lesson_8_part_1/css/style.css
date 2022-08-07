@@ -102,14 +102,23 @@ h6 {
 body {
   background-color: #fdde7e;
   font-family: "miso-bold";
+  border: 5px solid #000;
+}
+.wrap {
+  border: 1px solid #db0e75;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .prize_places {
-  margin: 49px 27px;
+  flex: 1;
   display: flex;
-
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  border: 1px solid #02995b;
+  flex: 1;
 }
 .place {
   display: flex;
@@ -177,9 +186,9 @@ body {
   width: 115px;
 }
 
-[class*="cup"]:hover .bean{
+[class*="cup"]:hover .bean {
   opacity: 0;
 }
-[class*="cup"]:hover .smoke{
+[class*="cup"]:hover .smoke {
   opacity: 1;
 }
