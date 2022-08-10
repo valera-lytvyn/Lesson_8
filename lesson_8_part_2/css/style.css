@@ -102,13 +102,15 @@ h6 {
   font-family: 'HansKendrick-Regular';
   letter-spacing: 25%;
   line-height: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   min-height: 100%;
-  margin: 91px 240px 0px;
+  margin-top: 91px;
   width: 1150px;
 
 }
@@ -117,7 +119,6 @@ h6 {
   width: 740px;
   height: 540px;
   background: url(../img/red_car.png) no-repeat;
-  margin: 0 20px 20px 0;
   display: flex;
   align-items: flex-end;
 }
@@ -150,11 +151,14 @@ h6 {
 [class*="column"] {
   width: 360px;
   height: 540px;
-  margin: 0 20px 20px 0;
+  margin: 20px 20px 0 0;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+.column_woman{
+  margin:0 0 0 20px;
 }
 
 .description {
